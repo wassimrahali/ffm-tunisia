@@ -258,13 +258,7 @@ const downloadApp = (key) => {
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="animate-fade-in-up">
-            <div className="mb-8">
-              <div className={`inline-block px-6 py-2 ${theme.cardBg} rounded-full ${theme.border} border ${theme.shadow} mb-6`}>
-                <span className={`text-sm font-semibold ${theme.textMuted} uppercase tracking-wide`}>
-                  🏆 Plateforme #1 en Tunisie
-                </span>
-              </div>
-            </div>
+          
             
             <h1 className={`text-5xl md:text-7xl font-extrabold mb-8 ${theme.text} leading-tight`}>
               Fantasy Football
