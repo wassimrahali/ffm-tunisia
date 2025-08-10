@@ -96,13 +96,6 @@ const TunisiaFantasyFootball = () => {
     "Système de transferts éclair et alertes"
   ];
 const downloadApp = (key) => {
-  const link = document.createElement('a');
-  link.href = '/app-release.apk'; // Path in public folder
-  link.href = '/apk-release.apk'; // path to your file
-  link.download = 'apk-release.apk';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
   if (key === 'ios') {
     // Redirect to App Store
     const link = document.createElement('a');
@@ -277,11 +270,10 @@ const downloadApp = (key) => {
               <button className={`group bg-gradient-to-r ${theme.gradient} hover:from-red-600 hover:to-rose-700 px-10 py-4 rounded-xl text-white font-bold text-lg ${theme.shadow} hover:shadow-red-500/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1`}>
                 <span className="flex items-center space-x-3">
                   <Play className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-<button
-  onClick={downloadApp}
->
-  <span>Télécharger Maintenant </span>
+<button onClick={() => downloadApp('android')}>
+  <span>Télécharger Maintenant</span>
 </button>
+
                 </span>
               </button>
               
