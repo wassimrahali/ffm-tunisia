@@ -99,24 +99,24 @@ const downloadApp = (key) => {
   if (key === 'ios') {
     // Redirect to App Store
     const link = document.createElement('a');
-    link.href = '/app-release.apk'; // Path in public folder
-    link.download = 'app-release.apk'; // File name
+    link.href = '/fantasy-tunisie.apk'; // Path in public folder
+    link.download = 'fantasy-tunisie.apk'; // File name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);  } 
   else if (key === 'android') {
     // Redirect to Google Play
     const link = document.createElement('a');
-    link.href = '/app-release.apk'; // Path in public folder
-    link.download = 'app-release.apk'; // File name
+    link.href = '/fantasy-tunisie.apk'; // Path in public folder
+    link.download = 'fantasy-tunisie.apk'; // File name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);  } 
   else if (key === 'apk') {
     // Direct APK download from public folder
     const link = document.createElement('a');
-    link.href = '/app-release.apk'; // Path in public folder
-    link.download = 'app-release.apk'; // File name
+    link.href = '/fantasy-tunisie.apk'; // Path in public folder
+    link.download = 'fantasy-tunisie.apk'; // File name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
